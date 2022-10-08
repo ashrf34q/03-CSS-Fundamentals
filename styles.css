@@ -1,5 +1,6 @@
 * {
-  /* color: red; */
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -17,18 +18,26 @@ h3 {
 
 .main-header {
   background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 50px;
+  height: 80px;
 }
 
 h1 {
   font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
 }
 
 h2 {
   font-size: 40px;
+  margin-bottom: 20px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -38,6 +47,10 @@ h4 {
   color: #444;
 }
 
+.post-header {
+  margin-bottom: 40px;
+}
+
 p {
   font-size: 22px;
   font-family: sans-serif;
@@ -45,8 +58,15 @@ p {
   margin-bottom: 15px;
 }
 
+ul,
+ol {
+  margin-left: 50px;
+  margin-right: 20px;
+}
+
 li {
   font-size: 20px;
+  margin: 10px;
 }
 
 #author {
@@ -62,15 +82,22 @@ li {
   list-style: none;
 }
 
+article {
+  margin-bottom: 50px;
+}
+
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
 }
 
-/* .first-li {
-  font-weight: bold;
-} */
+.post-img {
+  width: 100%;
+  height: auto;
+}
 
 article li:first-child {
   font-weight: bold;
@@ -78,10 +105,11 @@ article li:first-child {
 
 article li:last-child {
   font-style: italic;
+  margin-bottom: 0;
 }
 
 article li:nth-child(even) {
-  color: blue;
+  /* color: blue; */
 }
 
 /* article p:first-child {
