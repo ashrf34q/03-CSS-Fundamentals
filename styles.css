@@ -3,10 +3,14 @@
   padding: 0;
 }
 
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
 body {
   color: #444;
   font-family: sans-serif;
-
   border-top: 10px solid #444;
 }
 
@@ -108,9 +112,9 @@ article li:last-child {
   margin-bottom: 0;
 }
 
-article li:nth-child(even) {
-  /* color: blue; */
-}
+/* article li:nth-child(even) {
+   color: blue; 
+} */
 
 /* article p:first-child {
   color: red;
