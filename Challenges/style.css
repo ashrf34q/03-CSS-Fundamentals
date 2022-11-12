@@ -8,7 +8,22 @@
   margin: 40px auto;
 }
 
-/* SALE before */
+/* FLEXBOX */
+
+.main-container {
+  display: flex;
+  /* align-items: center; */
+  gap: 40px;
+}
+
+.first-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* END FLEXBOX */
 
 h2::before {
   content: "SALE";
@@ -46,7 +61,6 @@ article {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
 a:link {
@@ -54,14 +68,17 @@ a:link {
   margin-bottom: 25px;
 }
 
+.product-colors {
+  display: flex;
+  gap: 10px;
+}
+
 /* Overriding the same class, just changing one property which is the color.*/
+
 .color {
   width: 20px;
   height: 20px;
   background-color: black;
-  display: inline-block;
-  margin-right: 10px;
-  margin-left: 5px;
 }
 
 .box2 {
@@ -94,7 +111,6 @@ p {
 
 .add-button {
   text-transform: uppercase;
-  /* border: none; */
   background-color: black;
   cursor: pointer;
   color: #fff;
@@ -111,15 +127,23 @@ body {
 .details-title {
   text-transform: uppercase;
   font-size: 16px;
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .details-list {
-  list-style: circle;
-  margin-left: 20px;
+  list-style: square;
 }
 
 li {
   margin-bottom: 10px;
+}
+
+.first-element {
+  flex: 1;
+  margin-top: 20px;
+}
+
+.list-elements {
+  flex: 1;
+  margin-top: 20px;
 }
